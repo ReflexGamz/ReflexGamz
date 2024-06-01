@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		517CBAF22C041083000C5527 /* ReflexGamzApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517CBAF12C041083000C5527 /* ReflexGamzApp.swift */; };
-		517CBAF42C041083000C5527 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517CBAF32C041083000C5527 /* ContentView.swift */; };
+		517CBAF42C041083000C5527 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517CBAF32C041083000C5527 /* MainView.swift */; };
 		517CBAF62C041084000C5527 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 517CBAF52C041084000C5527 /* Assets.xcassets */; };
 		517CBAF92C041084000C5527 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 517CBAF82C041084000C5527 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +16,7 @@
 /* Begin PBXFileReference section */
 		517CBAEE2C041083000C5527 /* ReflexGamz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReflexGamz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		517CBAF12C041083000C5527 /* ReflexGamzApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflexGamzApp.swift; sourceTree = "<group>"; };
-		517CBAF32C041083000C5527 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		517CBAF32C041083000C5527 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		517CBAF52C041084000C5527 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		517CBAF82C041084000C5527 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,7 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				517CBAF12C041083000C5527 /* ReflexGamzApp.swift */,
-				517CBAF32C041083000C5527 /* ContentView.swift */,
+				517CBAF32C041083000C5527 /* MainView.swift */,
 				517CBAF52C041084000C5527 /* Assets.xcassets */,
 				517CBAF72C041084000C5527 /* Preview Content */,
 			);
@@ -137,7 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				517CBAF42C041083000C5527 /* ContentView.swift in Sources */,
+				517CBAF42C041083000C5527 /* MainView.swift in Sources */,
 				517CBAF22C041083000C5527 /* ReflexGamzApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +272,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ReflexGamz/Preview Content\"";
+				DEVELOPMENT_TEAM = J95ZW6CK77;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -279,6 +280,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,6 +302,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ReflexGamz/Preview Content\"";
+				DEVELOPMENT_TEAM = J95ZW6CK77;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -307,6 +310,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
