@@ -15,7 +15,7 @@ struct MainView: View {
         ZStack{
                 
                 //Background Color
-                Color.black
+                Color("BGColor")
                     .ignoresSafeArea()
                 
                 VStack{
@@ -154,7 +154,7 @@ struct MainView: View {
                                 .overlay(
                                     Text("Swipe down to play")
                                         .font(.system(size: 60, weight: .bold, design: .rounded))
-                                        .foregroundStyle(Color.black)
+                                        .foregroundStyle(Color("BGColor"))
                                         .lineLimit(1)
                                         .fixedSize(horizontal: true, vertical: true)
                                         .rotationEffect(Angle(degrees: 90))
