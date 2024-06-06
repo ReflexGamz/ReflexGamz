@@ -17,16 +17,17 @@ struct LaunchScreenSwitcher: View {
         }else{
             LaunchScreen()
                 .onAppear {
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                         withAnimation {
                             self.switcher = true
                         }
                     }
                     
                 }
-            
         }
+        
     }
+    
 }
 
 #Preview {
