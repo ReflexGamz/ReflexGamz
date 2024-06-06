@@ -11,6 +11,7 @@
 		517CBAF42C041083000C5527 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517CBAF32C041083000C5527 /* MainView.swift */; };
 		517CBAF62C041084000C5527 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 517CBAF52C041084000C5527 /* Assets.xcassets */; };
 		517CBAF92C041084000C5527 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 517CBAF82C041084000C5527 /* Preview Assets.xcassets */; };
+		D75F299D2C0EBA9500CB5496 /* Scoreboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75F299C2C0EBA9500CB5496 /* Scoreboard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		517CBAF32C041083000C5527 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		517CBAF52C041084000C5527 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		517CBAF82C041084000C5527 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D75F299C2C0EBA9500CB5496 /* Scoreboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scoreboard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				517CBAF12C041083000C5527 /* ReflexGamzApp.swift */,
 				517CBAF32C041083000C5527 /* MainView.swift */,
+				D75F299C2C0EBA9500CB5496 /* Scoreboard.swift */,
 				517CBAF52C041084000C5527 /* Assets.xcassets */,
 				517CBAF72C041084000C5527 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D75F299D2C0EBA9500CB5496 /* Scoreboard.swift in Sources */,
 				517CBAF42C041083000C5527 /* MainView.swift in Sources */,
 				517CBAF22C041083000C5527 /* ReflexGamzApp.swift in Sources */,
 			);
