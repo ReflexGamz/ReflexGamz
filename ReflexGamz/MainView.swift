@@ -81,6 +81,7 @@ struct MainView: View {
                             .rotationEffect(.degrees(-20))
                             .onTapGesture {
                                 print("Tapped on Theme")
+                                print("ugurcode")
                                 //ThemeView()
                             }
                             
