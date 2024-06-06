@@ -105,7 +105,7 @@ struct MainView: View {
                             .shadow(radius: 20)
                             .onTapGesture {
                                 print("Tapped on Scoreboard")
-                                LeaderboardView()
+                                //LeaderboardView()
                             }
 
                         }
