@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MainView: View {
     @State private var location = CGPoint(x: 0, y: -140)
+    @State private var showDifficulty = false
     
     var body: some View {
         
@@ -56,7 +57,7 @@ struct MainView: View {
                             .rotationEffect(.degrees(20))
                             .onTapGesture {
                                 print("Tapped on Difficulty")
-                                //DifficutlyView()
+                                showDifficulty = true
                             }
                             
                             //Theme
@@ -179,6 +180,9 @@ struct MainView: View {
             }
             .onDisappear {
                 AppDelegate.orientationLock = .all
+            }
+            .sheet(isPresented: $showDifficulty) {
+                DifficultySlider()
             }
         
     }
