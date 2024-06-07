@@ -10,7 +10,7 @@ import SwiftUI
 struct MainView: View {
     @State private var location = CGPoint(x: 0, y: -140)
     @State private var showDifficulty = false
-    
+    @State private var showTheme = false
     var body: some View {
         
         ZStack{
@@ -82,7 +82,7 @@ struct MainView: View {
                             .rotationEffect(.degrees(-20))
                             .onTapGesture {
                                 print("Tapped on Theme")
-                                print("ugurcode")
+                                showTheme = true
                                 //ThemeView()
                             }
                             
@@ -183,6 +183,9 @@ struct MainView: View {
             }
             .sheet(isPresented: $showDifficulty) {
                 DifficultySlider()
+            }
+            .sheet(isPresented: $showTheme) {
+                ThemeSlider()
             }
         
     }
