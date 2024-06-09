@@ -10,6 +10,7 @@
 		46A01BC22C11556F00298E3E /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A01BC12C11556F00298E3E /* LaunchScreen.swift */; };
 		46A01BC42C115ABF00298E3E /* LaunchScreenSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A01BC32C115ABF00298E3E /* LaunchScreenSwitcher.swift */; };
 		5178BD2B2C118B3E0012D7D0 /* DifficultySlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5178BD2A2C118B3E0012D7D0 /* DifficultySlider.swift */; };
+		3BB9D3FB2C10210100F2EDE3 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB9D3FA2C10210100F2EDE3 /* GameView.swift */; };
 		517CBAF22C041083000C5527 /* ReflexGamzApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517CBAF12C041083000C5527 /* ReflexGamzApp.swift */; };
 		517CBAF42C041083000C5527 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517CBAF32C041083000C5527 /* MainView.swift */; };
 		517CBAF62C041084000C5527 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 517CBAF52C041084000C5527 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 		46A01BC12C11556F00298E3E /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
 		46A01BC32C115ABF00298E3E /* LaunchScreenSwitcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenSwitcher.swift; sourceTree = "<group>"; };
 		5178BD2A2C118B3E0012D7D0 /* DifficultySlider.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = DifficultySlider.swift; sourceTree = "<group>"; tabWidth = 4; };
+		3BB9D3FA2C10210100F2EDE3 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		517CBAEE2C041083000C5527 /* ReflexGamz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReflexGamz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		517CBAF12C041083000C5527 /* ReflexGamzApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflexGamzApp.swift; sourceTree = "<group>"; };
 		517CBAF32C041083000C5527 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				517CBAF12C041083000C5527 /* ReflexGamzApp.swift */,
 				517CBAF32C041083000C5527 /* MainView.swift */,
 				D75F299C2C0EBA9500CB5496 /* Scoreboard.swift */,
+				3BB9D3FA2C10210100F2EDE3 /* GameView.swift */,
 				517CBAF52C041084000C5527 /* Assets.xcassets */,
 				517CBAF72C041084000C5527 /* Preview Content */,
 			);
@@ -157,6 +160,7 @@
 				46A01BC22C11556F00298E3E /* LaunchScreen.swift in Sources */,
 				D75F299D2C0EBA9500CB5496 /* Scoreboard.swift in Sources */,
 				517CBAF42C041083000C5527 /* MainView.swift in Sources */,
+				3BB9D3FB2C10210100F2EDE3 /* GameView.swift in Sources */,
 				517CBAF22C041083000C5527 /* ReflexGamzApp.swift in Sources */,
 				5178BD2B2C118B3E0012D7D0 /* DifficultySlider.swift in Sources */,
 			);
