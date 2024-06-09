@@ -26,10 +26,10 @@ struct ScoreboardView: View {
         
         ZStack {
             // Background Color
-            Color.gray
+            Color.black
                 .ignoresSafeArea()
             
-            VStack(alignment: .leading) {
+            VStack(alignment: .center) {
                 // Logo
                 Image("ScoreBoardIcon")
                     .resizable()
@@ -41,7 +41,7 @@ struct ScoreboardView: View {
                 Text("Leaderboard")
                     .font(.largeTitle)
                     .fontWeight(.heavy)
-                    .foregroundColor(.black)
+                    .foregroundColor(.white)
                     .padding(.leading, 20)
                 
                 Spacer()

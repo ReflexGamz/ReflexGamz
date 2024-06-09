@@ -9,13 +9,14 @@ import SwiftUI
 
 struct MainView: View {
     @State private var location = CGPoint(x: 0, y: -140)
-    
+    @State private var showDifficulty = false
+    @State private var showTheme = false
     var body: some View {
         
         ZStack{
                 
                 //Background Color
-                Color.black
+                Color("BGColor")
                     .ignoresSafeArea()
                 
                 VStack{
@@ -56,7 +57,7 @@ struct MainView: View {
                             .rotationEffect(.degrees(20))
                             .onTapGesture {
                                 print("Tapped on Difficulty")
-                                //DifficutlyView()
+                                showDifficulty = true
                             }
                             
                             //Theme
@@ -81,6 +82,7 @@ struct MainView: View {
                             .rotationEffect(.degrees(-20))
                             .onTapGesture {
                                 print("Tapped on Theme")
+                                showTheme = true
                                 //ThemeView()
                             }
                             
@@ -104,7 +106,7 @@ struct MainView: View {
                             .shadow(radius: 20)
                             .onTapGesture {
                                 print("Tapped on Scoreboard")
-                                //ScoreboardView()
+                                //LeaderboardView()
                             }
                             
                         }
@@ -154,7 +156,7 @@ struct MainView: View {
                                 .overlay(
                                     Text("Swipe down to play")
                                         .font(.system(size: 60, weight: .bold, design: .rounded))
-                                        .foregroundStyle(Color.black)
+                                        .foregroundStyle(Color("BGColor"))
                                         .lineLimit(1)
                                         .fixedSize(horizontal: true, vertical: true)
                                         .rotationEffect(Angle(degrees: 90))
@@ -178,6 +180,12 @@ struct MainView: View {
             }
             .onDisappear {
                 AppDelegate.orientationLock = .all
+            }
+            .sheet(isPresented: $showDifficulty) {
+                DifficultySlider()
+            }
+            .sheet(isPresented: $showTheme) {
+                ThemeSlider()
             }
         
     }
