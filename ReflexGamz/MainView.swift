@@ -36,21 +36,21 @@ struct MainView: View {
                             
                             //Difficulty
                             ZStack{
-                                RoundedRectangle(cornerRadius: 12, style: /*@START_MENU_TOKEN@*/.continuous/*@END_MENU_TOKEN@*/)
+                                RoundedRectangle(cornerRadius: 12, style: .continuous)
                                     .fill(Color("GradientGray"))
                                     .frame(width: 200,height: 200)
                                 
                                 VStack {
                                     Image("DifficultyIcon")
                                         .resizable()
-                                    .frame(width: 75, height: 75)
+                                        .frame(width: 75, height: 75)
                                     
                                     Text("Difficulty")
                                         .font(.system(size: 20, weight: .bold, design: .rounded))
                                         .foregroundColor(.white)
                                 }
                                 .offset(CGSize(width: 25, height: 20))
-
+                                
                             }
                             .offset(CGSize(width: -30, height: 150))
                             .rotationEffect(.degrees(20))
@@ -61,7 +61,7 @@ struct MainView: View {
                             
                             //Theme
                             ZStack{
-                                RoundedRectangle(cornerRadius: 12, style: /*@START_MENU_TOKEN@*/.continuous/*@END_MENU_TOKEN@*/)
+                                RoundedRectangle(cornerRadius: 12, style: .continuous)
                                     .fill(Color("GradientGray"))
                                     .frame(width: 200,height: 200)
                                 
@@ -72,8 +72,8 @@ struct MainView: View {
                                     
                                     Image("ThemeIcon")
                                         .resizable()
-                                    .frame(width: 75, height: 75)
-                                
+                                        .frame(width: 75, height: 75)
+                                    
                                 }
                                 .offset(CGSize(width: 25, height: -20))
                             }
@@ -86,14 +86,14 @@ struct MainView: View {
                             
                             //Scoreboard
                             ZStack{
-                                RoundedRectangle(cornerRadius: 12, style: /*@START_MENU_TOKEN@*/.continuous/*@END_MENU_TOKEN@*/)
+                                RoundedRectangle(cornerRadius: 12, style: .continuous)
                                     .fill(Color("GradientGray"))
                                     .frame(width: 225,height: 200)
                                 
                                 VStack {
                                     Image("ScoreBoardIcon")
                                         .resizable()
-                                    .frame(width: 75, height: 75)
+                                        .frame(width: 75, height: 75)
                                     
                                     Text("Scoreboard")
                                         .font(.system(size: 20, weight: .bold, design: .rounded))
@@ -106,7 +106,7 @@ struct MainView: View {
                                 print("Tapped on Scoreboard")
                                 //ScoreboardView()
                             }
-
+                            
                         }
                         .frame(height: 500)
                         
