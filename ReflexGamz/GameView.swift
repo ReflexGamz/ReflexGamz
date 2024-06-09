@@ -100,7 +100,7 @@ struct GameView: View {
                 self.countdown -= 1
             } else {
                 self.countdownTimer?.invalidate()
-                // Show end game screen 
+                // Show end game screen
             }
         }
     }
