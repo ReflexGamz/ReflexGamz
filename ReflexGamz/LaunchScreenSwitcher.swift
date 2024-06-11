@@ -11,21 +11,25 @@ struct LaunchScreenSwitcher: View {
     @State var switcher: Bool = false
     
     var body: some View {
-        
-        if switcher{
-            MainView()
-        }else{
-            LaunchScreen()
-                .onAppear {
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-                        withAnimation {
-                            self.switcher = true
+        ZStack{
+            Color("BGColor")
+                .ignoresSafeArea()
+            
+            if switcher{
+                MainView()
+            }else{
+                LaunchScreen()
+                    .onAppear {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                            withAnimation(.easeInOut(duration: 1)){
+                                self.switcher = true
+                            }
                         }
+                        
                     }
-                    
-                }
+            }
+            
         }
-        
     }
     
 }
