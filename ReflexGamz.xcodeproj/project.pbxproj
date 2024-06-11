@@ -63,12 +63,12 @@
 		517CBAF02C041083000C5527 /* ReflexGamz */ = {
 			isa = PBXGroup;
 			children = (
-				46A01BC12C11556F00298E3E /* LaunchScreen.swift */,
+				517CBAF12C041083000C5527 /* ReflexGamzApp.swift */,
 				46A01BC32C115ABF00298E3E /* LaunchScreenSwitcher.swift */,
+				46A01BC12C11556F00298E3E /* LaunchScreen.swift */,
+				517CBAF32C041083000C5527 /* MainView.swift */,
 				5190C31E2C127E5600C0A3BD /* ThemeSlider.swift */,
 				5178BD2A2C118B3E0012D7D0 /* DifficultySlider.swift */,
-				517CBAF12C041083000C5527 /* ReflexGamzApp.swift */,
-				517CBAF32C041083000C5527 /* MainView.swift */,
 				D75F299C2C0EBA9500CB5496 /* Scoreboard.swift */,
 				51B66CDA2C16702400635CCD /* EndGamePopupView.swift */,
 				517CBAF52C041084000C5527 /* Assets.xcassets */,
