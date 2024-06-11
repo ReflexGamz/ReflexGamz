@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ThemeSlider: View {
+    
+    @State var themeChoosen: String = "Emojis"
+    
     var body: some View {
         
         ZStack{
@@ -49,7 +52,7 @@ struct ThemeSlider: View {
                 }
                 .onTapGesture {
                     print("Tapped on Emoji Theme")
-                    //ThemeSelection()
+                    themeChoosen = "Emoji"
                 }
                 
                 Spacer()
@@ -81,7 +84,7 @@ struct ThemeSlider: View {
                 }
                 .onTapGesture {
                     print("Tapped on Car Theme")
-                    //ThemeSelection()
+                    themeChoosen = "Car"
                 }
                 
                 Spacer()
@@ -113,7 +116,7 @@ struct ThemeSlider: View {
                 }
                 .onTapGesture {
                     print("Tapped on Food Theme")
-                    //ThemeSelection()
+                    themeChoosen = "Food"
                 }
                 
             }
