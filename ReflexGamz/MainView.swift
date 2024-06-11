@@ -137,6 +137,7 @@ struct MainView: View {
                                                 location.y = 140
                                             }
                                             // gameview()
+                                          
                                             print("Transferred to the gameview()")
                                             
                                         }
