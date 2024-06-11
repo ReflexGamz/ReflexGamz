@@ -12,50 +12,70 @@ struct EndGamePopupView: View {
     
     var body: some View {
         ZStack {
-            Color.black.opacity(0.5)
+            Color("BGColor")
                 .ignoresSafeArea()
             
-            VStack {
+            VStack(spacing: 20) {
+                Image(systemName: "trophy.fill")
+                    .resizable()
+                    .frame(width: 80, height: 80)
+                    .foregroundColor(.yellow)
+                    .padding(.top, 40)
+                
                 Text("Congratulations!")
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .foregroundColor(.white)
-                    .padding()
                 
                 Text("You've finished the game!")
-                    .font(.title)
+                    .font(.title2)
                     .foregroundColor(.white)
-                    .padding()
                 
-                Button(action: {
-                    // Play again action
-                }) {
-                    Text("Play Again")
-                        .font(.title)
-                        .fontWeight(.bold)
+                VStack(spacing: 10) {
+                    Button(action: {
+                        // Play again action
+                    }) {
+                        HStack {
+                            Image(systemName: "arrow.clockwise.circle.fill")
+                                .font(.headline)
+                            Text("Play Again")
+                                .font(.headline)
+                                .fontWeight(.bold)
+                        }
                         .foregroundColor(.white)
                         .padding()
-                }
-                .background(Color.black)
-                .cornerRadius(10)
-                .padding()
-                
-                Button(action: {
-                    // Go back to main menu action
-                    isPresented = false
-                }) {
-                    Text("Go Back to Main Menu")
-                        .font(.title)
-                        .fontWeight(.bold)
+                        .frame(maxWidth: .infinity)
+                        .background(Color.blue)
+                        .cornerRadius(15)
+                        .shadow(color: Color.black.opacity(0.2), radius: 10, x: 0, y: 5)
+                    }
+                    
+                    Button(action: {
+                        // Go back to main menu action
+                        isPresented = false
+                    }) {
+                        HStack {
+                            Image(systemName: "house.fill")
+                                .font(.headline)
+                            Text("Go Back to Main Menu")
+                                .font(.headline)
+                                .fontWeight(.bold)
+                        }
                         .foregroundColor(.white)
                         .padding()
+                        .frame(maxWidth: .infinity)
+                        .background(Color.red)
+                        .cornerRadius(15)
+                        .shadow(color: Color.black.opacity(0.2), radius: 10, x: 0, y: 5)
+                    }
                 }
-                .background(Color.red)
-                .cornerRadius(10)
-                .padding()
+                .padding(.horizontal, 40)
+                
             }
-            .background(Color.gray)
+            .padding()
+            .background(Color.black.opacity(0.8))
             .cornerRadius(20)
+            .shadow(radius: 20)
             .padding()
         }
     }
@@ -66,4 +86,3 @@ struct EndGamePopupView_Previews: PreviewProvider {
         EndGamePopupView(isPresented: .constant(true))
     }
 }
-
