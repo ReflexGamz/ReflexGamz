@@ -11,6 +11,8 @@ struct MainView: View {
     @State private var location = CGPoint(x: 0, y: -140)
     @State private var showDifficulty = false
     @State private var showTheme = false
+    @State private var showScoreboard = false
+    
     var body: some View {
         
         ZStack{
@@ -106,7 +108,7 @@ struct MainView: View {
                             .shadow(radius: 20)
                             .onTapGesture {
                                 print("Tapped on Scoreboard")
-                                //LeaderboardView()
+                                showScoreboard = true
                             }
 
                         }
@@ -187,6 +189,9 @@ struct MainView: View {
             }
             .sheet(isPresented: $showTheme) {
                 ThemeSlider()
+            }
+            .sheet(isPresented: $showScoreboard) {
+                ScoreboardView()
             }
         
     }

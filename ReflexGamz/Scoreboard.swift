@@ -16,60 +16,57 @@ struct Player: Identifiable {
 struct ScoreboardView: View {
     // Sample data for the leaderboard
     @State private var players = [
-        Player(name: "sample", score: 1500),
-        Player(name: "sample2", score: 1200),
-        Player(name: "sample3", score: 900),
-        Player(name: "sample4", score:0)
+        Player(name: "Untitled", score: 0),
+        Player(name: "Untitled", score: 0),
+        Player(name: "Untitled", score: 0),
     ]
     
     var body: some View {
         
-        ZStack {
+        ZStack{
             // Background Color
-            Color.black
+            Color("BGColor")
                 .ignoresSafeArea()
-            
-            VStack(alignment: .center) {
-                // Logo
-                Image("ScoreBoardIcon")
-                    .resizable()
-                    .frame(width: 75, height: 75)
-                    .padding(.top, 50)
-                    .padding(.leading, 20)
-                
-                // Title
-                Text("Leaderboard")
-                    .font(.largeTitle)
-                    .fontWeight(.heavy)
-                    .foregroundColor(.white)
-                    .padding(.leading, 20)
-                
-                Spacer()
-                    .frame(height: 20)
-                
-                // Leaderboard List
-                List(players.sorted(by: { $0.score > $1.score }).prefix(10).enumerated().map { $0.element }) { player in
-                    HStack {
-                        // Ranking Emoji
-                        if let index = players.firstIndex(where: { $0.id == player.id }), index < 3 {
-                            let rankingEmojis = ["🥇", "🥈", "🥉"]
-                            Text(rankingEmojis[index])
+            GeometryReader { geometry in
+                VStack(spacing: 20) {
+                    // Logo
+                    Image(systemName: "trophy.fill")
+                        .resizable()
+                        .resizable()
+                        .frame(width: 80, height: 80)
+                        .foregroundColor(.yellow)
+                    
+                    // Title
+                    Text("Leaderboard")
+                        .font(.system(size: 30, weight: .bold, design: .rounded))
+                        .foregroundColor(.white)
+                    
+                    // Leaderboard List
+                    List(players.sorted(by: { $0.score > $1.score }).prefix(10).enumerated().map { $0.element }) { player in
+                        HStack {
+                            // Ranking Emoji
+                            if let index = players.firstIndex(where: { $0.id == player.id }), index < 3 {
+                                let rankingEmojis = ["🥇", "🥈", "🥉"]
+                                Text(rankingEmojis[index])
+                                    .font(.headline)
+                            }
+                            
+                            Text(player.name)
                                 .font(.headline)
+                                .foregroundColor(.white)
+                            Spacer()
+                            Text("\(player.score)")
+                                .font(.subheadline)
+                                .foregroundColor(.white)
                         }
-                        
-                        Text(player.name)
-                            .font(.headline)
-                            .foregroundColor(.white)
-                        Spacer()
-                        Text("\(player.score)")
-                            .font(.subheadline)
-                            .foregroundColor(.white)
+                        .padding(.vertical, 10)
+                        .listRowBackground(Color("BGColor"))
                     }
-                    .padding(.vertical, 10)
-                    .listRowBackground(Color.black)
+                    .listStyle(PlainListStyle())
+                    .padding(.horizontal, 20)
                 }
-                .listStyle(PlainListStyle())
-                .padding(.horizontal, 20)
+                .position(x: geometry.size.width/2, y: geometry.size.height - 150)
+            
             }
         }
     }
