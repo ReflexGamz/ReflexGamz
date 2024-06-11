@@ -25,15 +25,15 @@ struct DifficultySlider: View {
                     .offset(y: 50)
                 
                 Picker("Select an option", selection: $selectedOption) {
-                    ForEach(0..<options.count) { index in
+                    ForEach(0..<3) { index in
                         Text(self.options[index]).tag(index)
                             .foregroundColor(.white)
                     }
                 }
                 .pickerStyle(WheelPickerStyle())
                 .labelsHidden()
-                .onChange(of: selectedOption) { newValue in
-                    diffChoosen = options[newValue]
+                .onChange(of: selectedOption) {
+                    diffChoosen = options[selectedOption]
                 }
             }
         }
