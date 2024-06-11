@@ -37,7 +37,7 @@ struct ScoreboardView: View {
                         .foregroundColor(.yellow)
                     
                     // Title
-                    Text("Leaderboard")
+                    Text("Scoreboard")
                         .font(.system(size: 30, weight: .bold, design: .rounded))
                         .foregroundColor(.white)
                     
